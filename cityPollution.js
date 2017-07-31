@@ -1,17 +1,20 @@
-function CleanCities() {
-	var cleanestCities = ["boston", "quebec", "paris", "vienna"];
-	var numElements = cleanestCities.length;
-	var matchFound = false;
-	var cityToCheck = prompt("Which city do you want to check?");
-	cityToCheck = cityToCheck.toLowerCase();
-	for (var i = 0; i < numElements; i++) {
-		if (cityToCheck === cleanestCities[i]) {
-			matchFound = true;
-			alert(cityToCheck + " is a damned clean city!");
-			break;
-		}
+var dirtCities = ["Boston", "Amsterdam", "London", "Seattle"];
+var numElements = dirtCities.length;
+var matchFound = false;
+var cityToCheck = prompt("Enter your city");
+var firstChar = cityToCheck.slice(0, 1);
+var otherChars = cityToCheck.slice(1);
+firstChar = firstChar.toUpperCase();
+otherChars = otherChars.toLowerCase();
+var cappedCity = firstChar + otherChars;
+for (var i = 0; i < numElements; i++) {
+	if (cappedCity === dirtCities[i]) {
+		matchFound = true;
+		alert(cappedCity + " is filthy!");
+		break;
 	}
 	if (matchFound === "no") {
-		alert(cityToCheck + " is not especially clean for a city.");
+		alert(cappedCity + " isn't so bad. Relax!");
+		
 	}
 }
