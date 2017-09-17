@@ -1,3 +1,9 @@
-img {
+#magic {
 	width: 400px;
+}
+.sizeChange {
+	width: 300px;
+}
+.hidden {
+	display: none;
 }

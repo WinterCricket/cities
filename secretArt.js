@@ -3,3 +3,12 @@ function longGraph() {
 	document.getElementById("secretArt").innerHTML = fullGraph;
 
 }
+
+function resize() {
+
+	document.getElementById("big").className += " sizeChange";
+}
+
+function toHide() {
+	document.getElementById("big").className  += "hidden";
+}
