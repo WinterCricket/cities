@@ -1,4 +1,7 @@
-#magic {
+#magic #before {
+	width: 400px;
+}
+#before {
 	width: 400px;
 }
 .sizeChange {

@@ -10,5 +10,8 @@ function resize() {
 }
 
 function toHide() {
-	document.getElementById("big").className  += "hidden";
+	document.getElementById("big").className  += " hidden";
+}
+function swapPic(eId, newPic) {
+	document.getElementById(eId).src = newPic;
 }
